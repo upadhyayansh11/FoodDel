@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import authMiddleware from "./middleware/auth.js";
 import { connectDB } from "./config/db.js";
 import foodRouter from "./routes/foodRoute.js";
 import userRouter from "./routes/userRoute.js";
@@ -31,4 +30,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server Started on http://localhost:${port}`);
 });
-//mongodb+srv://upadhyayansh11:<db_password>@tomato.6owiiee.mongodb.net/?
